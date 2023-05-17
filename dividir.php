@@ -12,6 +12,8 @@ try {
 //function dividir (int $   numero1, int $numero2) : float {
 //    return $numero1 / $numero2;
 //}
+
+echo "<br>";
 dividir (10,2);
 echo "<br>";
 echo "Todo funcionó correctamente";
