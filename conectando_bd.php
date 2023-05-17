@@ -1,17 +1,12 @@
-<?php   
+<?php
 
-function dividir (int $numero1, int $numero2) : void {
-    echo $numero1 / $numero2;
-}
 try {
-    dividir (10,0);
-} catch (Exception $exception){
-    echo $exception->getMessage ();
+    $conexion = new PDO("informix:host=host.docker.internal; service=9088;database=mdn; server=informix; protocol=onsoctcp;EnableScrollableCursors=1", "informix", "in4mix");
+    echo "conexión exitosa";
+} catch (PDOException $e) {
+    echo "NO SE CONECTO A LA BD";
+    echo "<br>";
+    echo $e->getMessage();
 }
-
-//function dividir (int $   numero1, int $numero2) : float {
-//    return $numero1 / $numero2;
-//}
-
 echo "<br>";
-echo "Todo funcionó correctamente";
+echo "mensaje despues de la conexión";
