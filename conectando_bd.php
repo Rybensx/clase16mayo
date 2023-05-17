@@ -13,6 +13,5 @@ try {
 //    return $numero1 / $numero2;
 //}
 
-dividir (10,0);
 echo "<br>";
 echo "Todo funcionó correctamente";
